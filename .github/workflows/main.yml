@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+    - run: ls -a
     - name: Build docker image
       run: docker build . -t test-image
     - name: Run docker image
